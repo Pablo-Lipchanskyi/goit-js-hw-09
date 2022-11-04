@@ -34,11 +34,11 @@ const timer = {
         const delta = selDate - Date.now();
          console.log(delta);
         this.getRefs();
-        setInterval(() => {
+        const Interval = setInterval(() => {
             const delta = selDate - Date.now();
 
             if (delta <= 0) {
-                clearInterval(intervalId)
+                clearInterval(Interval)
             };
             
             const data = this.convertMs(delta);
