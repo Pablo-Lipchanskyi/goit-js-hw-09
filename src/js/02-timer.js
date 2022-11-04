@@ -28,13 +28,13 @@ function onBtnStart() {
 timer.start()
 }
 const timer = {
-    intervalId: null,
+    
     refs: {},
-    start(rootSelector) {
+    start() {
         const delta = selDate - Date.now();
          console.log(delta);
-        this.getRefs(rootSelector);
-        this.intervalId = setInterval(() => {
+        this.getRefs();
+        setInterval(() => {
             const delta = selDate - Date.now();
 
             if (delta <= 0) {
