@@ -16,3 +16,14 @@ img {
   display: block;
   max-width: 100%;
 }
+.timer{
+  display: flex;
+  margin-top: 50px;
+}
+.field{
+  color: cornflowerblue;
+  font-size: 30px
+}
+.field:not(:last-child){
+  margin-right: 20px;
+}
