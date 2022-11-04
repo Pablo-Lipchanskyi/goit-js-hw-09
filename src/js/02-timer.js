@@ -27,11 +27,10 @@ let selDate = null;
 function onBtnStart() {
 timer.start()
 }
-const timerRef = document.querySelector('.timer');
 const timer = {
     intervalId: null,
     refs: {},
-    start(rootSelector, deadline) {
+    start(rootSelector) {
         const delta = selDate - Date.now();
          console.log(delta);
         this.getRefs(rootSelector);
