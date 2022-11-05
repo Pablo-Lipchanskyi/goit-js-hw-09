@@ -37,7 +37,7 @@ const timer = {
         const Interval = setInterval(() => {
             const delta = selDate - Date.now();
 
-            if (delta <= 0) {
+            if (delta <= 1000) {
                 clearInterval(Interval)
             };
             
